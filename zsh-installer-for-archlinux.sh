@@ -10,7 +10,7 @@
 while getopts ":r" opt; do
 	case $opt in
 		r)
-			pkg remove zsh
+			sudo pacman -Rs zsh
 			rm -rf ~/.oh-my-zsh ~/.hushlogin ~/.zshrc ~/.p10k.zsh
 			chsh -s bash
 			echo ""
