@@ -30,6 +30,7 @@ touch ~/.hushlogin
 #Zsh
 sudo pacman -Syy
 sudo pacman -S git zsh
+chsh -s /usr/bin/zsh
 sh -c "$(sed -e "/exec zsh -l/d" <<< $(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh))"
 #Plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
